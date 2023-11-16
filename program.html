@@ -1,95 +1,170 @@
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-    <title>IS 436 Example</title>
+
+    <link rel="stylesheet" href="" />
+    <title>IS department page</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	
+<style>
+
+     footer {
+         background-color: grey;
+            text-align: center;
+            color: white;
+            padding: 10px;
+			margin-top: 150px;
+			
+        }
+		
+body {
+ background-image: url('students.jpg'); /* Replace 'your-image.jpg' with the path to your image file */
+            background-size: cover; /* This will make sure the background image covers the entire viewport */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent the background image from repeating */
+			background-color: rgba(255, 255, 255, 1);
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+}
+  </style>
   </head>
-  <body class="p-3 m-0 border-0 bd-example">
+ 
 
-    <!-- Example Code -->
+<body>
     
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
+   <nav class="navbar navbar-expand-lg" style="  border: 2px solid black; border-width:30%;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://umbc.edu/wp-content/uploads/2022/02/umbc-primary-logo-250x58.png" alt="UMBC Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
+        <li class="nav-item">
+         
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style= "background-color: black; color: white;">
+            Select
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="program.html">Undergraduate Program</a></li>
+            <li><a class="dropdown-item" href="index.html">Home</a></li>
+			  <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+          
+          
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
+        </li>
 
-    <div class="container px-4 py-5" id="featured-3">
-      <h2 class="pb-2 border-bottom">Columns with icons</h2>
-      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-        <div class="feature col">
-          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-            <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
-          </div>
-          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-          <a href="#" class="icon-link">
-            Call to action
-            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-          </a>
-        </div>
-        <div class="feature col">
-          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-            <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
-          </div>
-          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-          <a href="#" class="icon-link">
-            Call to action
-            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-          </a>
-        </div>
-        <div class="feature col">
-          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
-          </div>
-          <i class="bi bi-123"></i>
-          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-          <a href="#" class="icon-link">
-            Call to action
-            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-          </a>
-        </div>
-      </div>
+        <li class="nav-item">
+          
+        </li>
+        <li class="nav-item">
+       
+        </li>
+      </ul>
+
     </div>
-    
-    <!-- End Example Code -->
-  </body>
+  </div>
+</nav>
+	  <div  >
+    <h2  style="font-size: 44px; font-weight: bold; color: #fff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);"> College of Engineering and Information Technology</h2>
+   
+  </div>
+<div style="display: flex;">
+
+  <div style="width: 300px; margin-right: 10px; text-align: center; height: 450px; border: 3px solid black; background-color:white; opacity: .6; font-weight: bold; color: black; text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);">
+    <h2 style="color: black; font-size: 25px; text-align: center; text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);">Required Major Courses</h2>
+  <ul style = "font-size: 15px;">
+<li> IS 300:Management Information Systems</li>
+<li> IS 310:Software and Hardware Concepts</li>
+<li> IS 410:Introduction to Database Design</li>
+<li> IS 420:Database Application Development</li>
+<li> IS 425:Decision Support Systems</li> 
+<li> IS 436:Structured Systems Analysis & Design</li>
+<li>IS 450:Data Communications and Networks</li>
+<li> IS 451:Network Design and Management</li>
+<li>IS 3xx or 4xx – Upper Level IS Elective</li>
+  
+  </ul>
+  </div>
+
+  <div style="width: 300px; margin-right: 10px; background-color:white; opacity: .6;text-align: center; height: 450px; border: 3px solid black; font-size: 15px; font-weight: bold; color: black; text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);">
+    <h2 style="color: black; font-size: 25px; text-align: center; text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);">Math and Programming Courses</h2>
+  <ul style="font-size: 15px;">
+  <li> MATH 155:Applied Calculus</li>
+  <li> MATH 215:Finite Mathematics for Information Sciences</li>
+  <li> STAT 351:Applied Statistics for Business and Economics</li>
+  <li> IS 147:Introduction to Computer Programming or CMSC 201 – Computer Science I for Majors</li>
+  <li> IS 247:Computer Programming II or CMSC 202 – Computer Science II for Major</li>
+  <li> One additional approved programming course selected from the following:
+IS246,IS413,IS448,IS471,IS472</li>
+  </ul>
+
+
+  </div>
+
+  <div style="width: 200px;background-color:white; opacity: .6; text-align: center; height: 450px; border: 3px solid black; font-size: 15px; font-weight: bold; color: black; text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);">
+    <h2 style="color: black; font-size: 25px; text-align: center; text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);">Administrative Science Courses</h2>
+<ul style= "font-size: 14px;";>
+  <li> MGMT 210:The Practice of Management</li>
+  <li> ECON 101:Principles of Microeconomics</li>
+  <li> ECON 102:Principles of Macroeconomics</li>
+  <li> ECON 121:Principles of Accounting I</li>
+  <li> ECON 122:Principles of Accounting II</li>
+  <li> ENGL 393:Technical Communication or IS 369: Research Seminar: Writings In Information Systems</li>
+</ul>  
+ </div>
+
+  <div style="display: flex; flex-direction: column; margin-left: 20px;">
+<div style="width: 400px; margin-bottom: 25px;text-align: center; height: 400px; border: 3px solid black; font-size: 15px; font-weight: bold; color: black; text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);">
+  <h2 style="color: black; font-size: 25px; text-align: center; text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);">Prerequisite Structure Chart</h2>
+  <img src="prereq_chart.png" alt="Your Image Description" style="width: 100%; height: auto;">
+</div>
+
+
+<div style="width: 400px; background-color:white; opacity: .6;text-align: center; height: 200px; border: 3px solid black; font-size: 15px; font-weight: bold; color: black; text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);">
+  <h2 style="color: black; font-size: 25px; text-align: center; text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);">Additional Information</h2>
+  <p> Students must earn a grade of “C” or better for any course to be applied to the Information Systems major.
+    Before being allowed to take IS 410 and 450 (and then the rest of the IS 400-level core courses), a student must first complete the following gateway requirements found <a href="https://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-degree-programs/bachelor-of-science-in-information-systems/">here</a></p>
+</div>
+
+
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+
+	 
+	
+</body>
+
+
+<!-- Footer Code -->
+ <footer  style= "text-align: left; color: white;  border: 2px solid black; background-color:black;">
+    <div> <strong>Subscribe to our weekly newsletter </strong></div>
+    <div>
+        <input type="text" placeholder="Enter your email" style= "width: 20%;">
+			</div>
+		<div style = "text-align: right; margin-top: -30px;">
+        <button >Contact Us</button>
+    </div>
+	
+
+
+</footer>
+  
 </html>
